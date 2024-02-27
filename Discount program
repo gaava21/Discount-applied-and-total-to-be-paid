@@ -1,0 +1,39 @@
+Imports System
+Imports System.Numerics
+
+Module Program
+
+Sub EjercicioDescuentos()
+    Dim monto As Double
+
+    Console.WriteLine("Ingrese el monto: ")
+    monto = Console.ReadLine()
+
+    Dim descuentoporcentaje As Double
+
+    If monto = 1000 Then
+        descuentoporcentaje = 0.3
+    ElseIf monto = 500 Then
+        descuentoporcentaje = 0.2
+    ElseIf monto = 250 Then
+        descuentoporcentaje = 0.1
+    Else
+        descuentoporcentaje = 0.05
+    End If
+
+Imports System
+Imports System.Runtime.InteropServices.JavaScript.JSType
+
+Module Program
+
+    Dim descuento As Double = monto * descuentoporcentaje
+    Dim total = monto - descuento
+
+    Console.WriteLine("Descuento aplicado: {0} ({1} %) total a pagar: {2}", descuento, descuentoporcentaje * 100, total)
+
+End Sub
+
+    Sub Main(args As String())
+        EjercicioDescuentos()
+    End Sub
+End Module
